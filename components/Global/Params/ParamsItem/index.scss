@@ -1,0 +1,19 @@
+.params-item {
+    box-shadow: 0px 0px 50px rgba(131, 42, 64, 0.4);
+    border-radius: 40px;
+    background-color: $white;
+    margin-bottom: 40px;
+
+    display: flex;
+    flex-flow: row;
+
+    &__icon {
+
+    }
+    &__count {
+        margin: 0 10px;
+        width: 100px;
+        font-size: 48px;
+        line-height: 1.2em;
+    }
+}
