@@ -40,7 +40,6 @@
 
 <script>
 import Navigation from './ui/Navigation'
-
 import Heart from '~/assets/icons/heart.svg'
 import Active from '~/assets/icons/smile/active.svg'
 import Inactive from '~/assets/icons/smile/inactive.svg'
