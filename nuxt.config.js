@@ -31,6 +31,7 @@ export default {
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
+    { src: '~/plugins/bl-components', ssr: false }    
   ],
   /*
   ** Nuxt.js dev-modules

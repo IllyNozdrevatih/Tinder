@@ -1,19 +1,23 @@
 .params-item {
-    box-shadow: 0px 0px 50px rgba(131, 42, 64, 0.4);
+    padding: 10px 0 10px 10px;
+    box-shadow: 0px 0px 50px rgba(131, 42, 64, 0.4);   
     border-radius: 40px;
-    background-color: $white;
+    background-color: white;
     margin-bottom: 40px;
 
     display: flex;
     flex-flow: row;
-
+    justify-content: space-between;
     &__icon {
-
+        display: flex;
+        align-items: center;
     }
     &__count {
         margin: 0 10px;
-        width: 100px;
+        max-width: 100px;
+        width: 100%;
         font-size: 48px;
         line-height: 1.2em;
+        text-align: center;
     }
 }

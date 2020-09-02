@@ -1,16 +1,17 @@
 <template>
-  <div class="params-item">
-      <div class="params-item__icon"></div>
-      <div class="params-item__count"></div>
+  <div class="prams-list">
+      <div class="prams-list__title">
+          <slot name="title"/>
+      </div>
+      <div class="prams-list__grid">
+          <slot name="grid" />
+      </div>
   </div>
 </template>
 
 <script>
 export default {
-    props: {
-        icon: String,
-        count: Number
-    }
+
 }
 </script>
 

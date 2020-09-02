@@ -16,18 +16,12 @@
 </template>
 
 <script>
-import CycleButton from '~/components/Global/CycleButton'
-
 import Home from '~/assets/icons/home.svg'
 import Reload from '~/assets/icons/reload.svg'
 
 export default {
     components: {
-       CycleButton, Home, Reload
+       Home, Reload
     }
 }
 </script>
-
-<style>
-
-</style>
