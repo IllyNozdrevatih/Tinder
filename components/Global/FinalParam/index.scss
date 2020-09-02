@@ -1,0 +1,16 @@
+.final-param {
+    text-align: center;
+    &__number {
+        h3 {
+            color: #424242;
+            font-size: 48px;
+            line-height: 1.2em;
+        }
+    }
+    &__name {
+        color: #424242;
+        p {
+            line-height: 1.25em;
+        }
+    }
+}
