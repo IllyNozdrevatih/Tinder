@@ -12,20 +12,20 @@
                     <b-row>
                         <b-col col lg="4">
                             <final-param>
-                                <template slot="number">100%</template>
+                                <template slot="number">{{liked}}</template>
                                 <template slot="name">Препарат 1</template>
                             </final-param>
                         </b-col>
                         <b-col col lg="4">
                             <final-param>
-                                <template slot="number">100%</template>
-                                <template slot="name">Препарат 1</template>
+                                <template slot="number">{{noped}}</template>
+                                <template slot="name">Препарат 2</template>
                             </final-param>
                         </b-col>
                         <b-col col lg="4">
                             <final-param>
-                                <template slot="number">100%</template>
-                                <template slot="name">Препарат 1</template>
+                                <template slot="number">{{supered}}</template>
+                                <template slot="name">Препарат 3</template>
                             </final-param>
                         </b-col>
                     </b-row>
@@ -49,6 +49,20 @@ import Home from '~/assets/icons/home.svg'
 export default {
     components: {
         Home
+    },
+    computed: {
+        liked(){
+            const num = this.$store.getters['swiper/like'] / this.$store.getters['cards/cardsCount'] * 100
+            return num.toFixed(1) + '%'   
+        },
+        noped(){
+            const num = this.$store.getters['swiper/nope'] / this.$store.getters['cards/cardsCount'] * 100
+            return num.toFixed(1) + '%' 
+        },
+        supered(){
+            const num = this.$store.getters['swiper/super'] / this.$store.getters['cards/cardsCount'] * 100
+            return num.toFixed(1) + '%'
+        },
     }
 }
 </script>

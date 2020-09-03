@@ -1,0 +1,26 @@
+.swipe-bnt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 360px;
+    height: 118.91px;    
+    border: 5px solid;
+    &__text {
+        color: inherit;
+        font-size: 52px;
+        line-height: 1em;
+    } 
+    &--blue {
+        color: #169AE4;
+    }
+    &--yellow {
+        color: #FFCA01;
+        border-color: #FFCA01;
+    }
+    &--pure {
+        color: #8049C7;
+        border-color: #8049C7;
+    }
+    outline: 0px !important;
+    box-shadow: unset !important;
+}

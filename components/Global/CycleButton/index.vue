@@ -1,5 +1,5 @@
 <template>
-  <div class="cycle-button">
+  <div class="cycle-button" @click="$emit('click')">
       <slot name="inner"/>
   </div> 
 </template>

@@ -8,13 +8,6 @@
       </div>
   </div>
 </template>
-
-<script>
-export default {
-
-}
-</script>
-
-<style>
-
+<style lang="scss">
+@import './index';
 </style>

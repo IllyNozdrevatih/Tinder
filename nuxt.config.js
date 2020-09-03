@@ -23,6 +23,11 @@ export default {
   /*
   ** Global CSS
   */
+ 
+ server: {
+  port: 8080, // default: 3000
+  host: 'localhost' // default: localhost
+},
   css: [
     '@/assets/scss/main.scss'
   ],
@@ -45,8 +50,13 @@ export default {
     // Doc: https://bootstrap-vue.js.org
     'bootstrap-vue/nuxt',
     '@nuxtjs/pwa',
+    '@nuxtjs/axios',
     'nuxt-svg-loader'
   ],
+  
+  axios: {
+    baseURL: 'http://193.164.149.101',
+  },
   /*
   ** Build configuration
   ** See https://nuxtjs.org/api/configuration-build/

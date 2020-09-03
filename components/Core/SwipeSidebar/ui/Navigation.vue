@@ -7,7 +7,7 @@
                 </cycle-button>
             </b-col>
             <b-col col lg="3">
-                <cycle-button>
+                <cycle-button  @click="refresh">
                     <reload slot="inner" />
                 </cycle-button>
             </b-col>
@@ -22,6 +22,12 @@ import Reload from '~/assets/icons/reload.svg'
 export default {
     components: {
        Home, Reload
+    },
+    methods: {
+        refresh(){
+            this.$store.commit('swiper/refresh')
+            this.$store.commit('cards/refresh')
+        }
     }
 }
 </script>
