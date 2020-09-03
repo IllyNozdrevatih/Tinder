@@ -8,7 +8,7 @@
           <div class="welcome-cycle__wrap">
             <h3 class="text-white welcome__sub-title">Добро пожаловать в игру</h3>
             <h1 class="text-white welcome__title">Помоги Фармацевту</h1>
-            <nuxt-link to="/main" class="btn text-primary btn-secondary"
+            <nuxt-link to="/main" class="welcome__btn btn btn-secondary"
               >Начать</nuxt-link>
           </div>
         </div>
