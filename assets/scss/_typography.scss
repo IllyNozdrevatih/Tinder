@@ -15,9 +15,12 @@ html {
     -webkit-font-smoothing: antialiased;
     box-sizing: border-box;
 }
-
-body, #__layout {
+body {
     height: 100vh;
+}
+#__nuxt, #__layout {
+    // height: 100vh;
+    height: 100%;
 }
 
 h1,.h1,
@@ -85,5 +88,30 @@ button,.button,.btn {
         padding: 15px;
         font-size: 24px;
         height: 60px;
+    }
+    transition: .3s all;
+    &:hover {
+        opacity: .7;
+    }
+}
+// helper 
+.h-100vh {
+    height: 100vh;
+}
+// media
+@media (min-width: 1200px){
+    .container, .container-sm, .container-md, .container-lg, .container-xl {
+        max-width: 1210px;
+    }    
+}
+@media (max-width: 1200px){    
+    h2,.h2 {
+        font-size: 30px;
+        line-height: 1.22em;
+    }
+    h3 {
+        font-size: 26px;
+        line-height: 1.1em;
+        letter-spacing: 0.02em;
     }
 }

@@ -1,5 +1,6 @@
 .swipe-sidebar {
-    height: 100vh;
+    // height: 100vh;
+    height: 100%;
     display: flex;
     flex-flow: column;
     position: relative;
@@ -12,9 +13,10 @@
         opacity: .7;
     }
     &__wrap {
+        padding: 0 15px;
         height: 100%;
         margin: 70px auto 0;
-        max-width: 400px;
+        max-width: 430px;
         width: 100%;
         display: flex;
         flex-flow: column;
@@ -23,7 +25,7 @@
         margin-top: 290px;
     }
     &__queue {
-        padding: 25px 0;
+        padding: 25px 15px;
         margin-top: auto;
         text-align: center;
         position: relative;
@@ -46,5 +48,13 @@
     }
     .text-white {
         position: relative;
+    }
+}
+
+@media (max-width: 1230px){
+    .swipe-sidebar {        
+        &__params {
+            margin-top: 70px;
+        }
     }
 }

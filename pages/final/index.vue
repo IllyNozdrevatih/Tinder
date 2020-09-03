@@ -1,9 +1,11 @@
 <template>
     <div class="final-page">
-        <div class="final-home-link">            
-            <cycle-button class="gradient--green-to-blue">
-                <home slot="inner" />
-            </cycle-button>
+        <div class="final-home-link">                  
+            <nuxt-link to="/">
+                <cycle-button class="gradient--green-to-blue home-icon-gradient"  @click="refresh">
+                    <home slot="inner" />
+                </cycle-button>
+            </nuxt-link>     
         </div>
         <div class="final-bg-img"></div>
         <div class="container">       
@@ -12,13 +14,13 @@
                     <b-row>
                         <b-col col lg="4">
                             <final-param>
-                                <template slot="number">{{liked}}</template>
+                                <template slot="number">{{noped}}</template>
                                 <template slot="name">Препарат 1</template>
                             </final-param>
                         </b-col>
                         <b-col col lg="4">
                             <final-param>
-                                <template slot="number">{{noped}}</template>
+                                <template slot="number">{{liked}}</template>
                                 <template slot="name">Препарат 2</template>
                             </final-param>
                         </b-col>
@@ -36,7 +38,7 @@
                     </div>
                 </div>
                 <div class="final__footer">
-                    <b-button class="btn--sm btn--grey">Попробовать еще</b-button>
+                    <b-button class="btn--sm btn--grey" @click="goBack">Попробовать еще</b-button>
                 </div>
             </div> 
         </div>
@@ -49,6 +51,16 @@ import Home from '~/assets/icons/home.svg'
 export default {
     components: {
         Home
+    },
+    methods: {
+        goBack(){
+            this.refresh()
+            this.$router.push('/main')
+        },
+        refresh(){
+            this.$store.commit('swiper/refresh')
+            this.$store.commit('cards/refresh')
+        }
     },
     computed: {
         liked(){

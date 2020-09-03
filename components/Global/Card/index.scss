@@ -1,5 +1,10 @@
-.tinder-card {
+.tinder-card-item {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    height: 100%;
+    
+  background: #fefefe;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
     overflow: hidden;
     &__image {
         img {
@@ -11,5 +16,22 @@
     }
     &__content {
         padding: 25px 60px 80px;
+    }
+}
+@media (max-width: 767px){ 
+    .tinder-card-item {
+        &__image {
+            height: calc( 300 /  540 * 100%);
+        }
+        &__content {
+            padding: 20px 15px;
+        }
+    }
+}
+@media (max-width: 630px){ 
+    .tinder-card-item {
+        &__image {
+            height: calc( 300 /  540 * 100%);
+        }
     }
 }

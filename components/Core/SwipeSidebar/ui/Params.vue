@@ -4,17 +4,17 @@
         <template slot="grid">
         <div class="container-fluid no-gutters p-0">
             <b-row class="justify-content-center">
-                <b-col col lg="6">
+                <b-col col xl="6" lg="12" sm="12">
                     <params-item :count="$store.getters['swiper/like']">
                         <active slot="icon"/>
                     </params-item>
                 </b-col>
-                <b-col col lg="6">
+                <b-col col xl="6" lg="12" sm="12" >
                     <params-item :count="$store.getters['swiper/nope']">
                         <inactive slot="icon"/>
                     </params-item>
                 </b-col>
-                <b-col col lg="6">
+                <b-col col xl="6" lg="12" sm="12">
                     <params-item :count="$store.getters['swiper/super']">
                         <heart slot="icon"/>
                     </params-item>

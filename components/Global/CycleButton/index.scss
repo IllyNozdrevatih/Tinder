@@ -6,4 +6,33 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+    transition: .3s all;
+    svg {
+        transition: .3s all;
+    }
+    &.refresh-icon {
+        svg {
+            width: 42px;
+            height: 32px;
+            path {
+                fill: rgba(255, 88, 100, .5);
+            }
+        }
+        &:hover {
+            svg {
+                transform: rotate(180deg)
+            }
+        }
+    }
+    &.home-icon {
+        &:hover {
+            background-color: rgba(0, 0, 0, .7);
+        }
+    }
+    &.home-icon-gradient {
+        &:hover {
+            background: linear-gradient(63.53deg, #2D8550 36.62%, #5E6EC2 63.38%);
+        }
+    }
 }

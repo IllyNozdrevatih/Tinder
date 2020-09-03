@@ -1,13 +1,13 @@
 <template>
-  <div class="tinder-card">
-      <div class="tinder-card__image">          
+  <div class="tinder-card-item">
+      <div class="tinder-card-item__image">          
             <slot name="image"/>
       </div>
-      <div class="tinder-card__content">
-          <div class="tinder-card__name">
+      <div class="tinder-card-item__content">
+          <div class="tinder-card-item__name">
               <h3><slot name="name"/></h3>
           </div>
-          <div class="tinder-card__description">
+          <div class="tinder-card-item__description">
               <p><slot name="description"/></p>
           </div>
       </div>

@@ -12,8 +12,8 @@
     bottom: 46px;
     margin: auto;
     min-width: 300px;
-    max-width: 590px;
-    max-height: 590px;
+    max-width: 610px;
+    max-height: 610px;
   }
   
 .super-pointer,
@@ -34,7 +34,12 @@
 .tinder-card[data-index='1'], .tinder-card[data-index='2'], .tinder-card[data-index='3']{
   transform: unset !important;
 }
-
+.tinder-card {
+  padding: 15px;
+  background: transparent !important;
+  border-radius: 0 !important;
+  box-shadow: unset !important;
+}
 
 .pic {
   width: 100%;
@@ -51,4 +56,24 @@
   display: flex;
   flex-flow: row;
   justify-content: space-between;
+}
+@media (max-width: 1230px){
+  .vue-tinder {
+    top: -137px;
+    max-height: 510px;
+  }
+  .swiper-buttons {
+    bottom: 15px;
+    flex-flow: column;
+    align-items: center;
+    .btn {
+      margin-bottom: 10px;    
+      max-width: 540px;
+      padding: 15px 50px;
+      width: 100%;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
 }

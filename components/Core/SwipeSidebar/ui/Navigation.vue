@@ -2,12 +2,14 @@
     <div class="container-fluid no-gutters p-0">
         <b-row>
             <b-col col lg="3">
-                <cycle-button>
-                    <home slot="inner" />
-                </cycle-button>
+                <nuxt-link to="/" >
+                    <cycle-button @click="refresh" class="home-icon">
+                        <home slot="inner" />
+                    </cycle-button>
+                </nuxt-link>
             </b-col>
             <b-col col lg="3">
-                <cycle-button  @click="refresh">
+                <cycle-button  @click="refresh" class="refresh-icon">
                     <reload slot="inner" />
                 </cycle-button>
             </b-col>
